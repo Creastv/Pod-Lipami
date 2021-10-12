@@ -1,0 +1,9 @@
+@font-face{
+    font-family:"abril-display-extraBold";
+    src:url("../fonts/Abril_Display_ExtraBold.otf") format("woff"),
+    url("../fonts/Abril_Display_ExtraBold.otf") format("opentype"),
+    url("../fonts/Abril_Display_ExtraBold.otf") format("truetype");
+}
+h1, h2, h3, h4, h5, h6{
+    font-family:"abril-display-extraBold";
+}
