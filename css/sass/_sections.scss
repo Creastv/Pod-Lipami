@@ -1,0 +1,430 @@
+/////////////////////////////// Slider
+section#slider{
+background-color: #656565;
+    .slider-home{
+        .swiper-slide{
+            background-size: cover;
+            background-position: center;
+            .grad{
+                background-color:rgba(0,0,0, .5);
+                height: 90vh;
+                min-height: 650px;
+                .content{
+                    width: 100%;
+                    padding: 100px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+                     @media #{$xs} { 
+                         padding: 15px;
+                     }
+                    .title{
+                        color:#fff;
+                        font-size: 73px;
+                        margin-bottom: 50px;
+                        @media #{$sm} {  
+                            font-size: 51px;
+                             br{
+                                display: none;
+                            }
+                        }
+                        @media #{$xs} {  
+                            font-size: 41px;
+                            br{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-pagination {
+        margin-top: -50px;
+    }
+}
+/////////////////////////////// ENDSlider
+
+/////////////////////////////// o-nas
+section#o-nas{
+    padding: 110px 0 0;
+    @media #{$xs} { 
+        padding: 30px 0 0;
+    }
+    img{
+        position: sticky;
+        top: 100px;
+    }
+}
+/////////////////////////////// END o-nas
+
+/////////////////////////////// wesele
+section#wesele{
+    padding: 110px 0;
+    position: relative;
+    @media #{$xs} { 
+        padding: 30px 0;
+    }
+    .oferta{
+        padding: 20px;
+        img{
+            margin-bottom: 50px;
+            @media #{$xs} { 
+                margin-bottom: 25px;
+            }
+        }
+        h3{
+            margin-top: 0;
+            margin-bottom: 50px;
+            @media #{$xs} { 
+                margin-bottom: 20px;
+                font-size: 31px;
+            }
+        }
+    }
+     svg{
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        width: 37%;
+          pointer-events: none; 
+    }
+}
+/////////////////////////////// END wesele
+
+/////////////////////////////// oferta
+section#oferta{
+    background-color: $red;
+    padding: 110px 0  0;
+     @media #{$xs} { 
+        padding: 30px 0;
+    }
+    .toggle{
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        @media #{$xs} { 
+            display: flex;
+        }
+        p{
+            margin-bottom: 0;
+            transition: all .3;
+            cursor: pointer;
+            border-top:1px solid #a87679;
+            border-bottom: 1px solid #a87679;
+            width: 100%;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            font-size: 18px;
+            color:#fff;
+            display: block;
+            width: 100%;
+            &:hover{
+                background-color: #924042;
+            }
+            &:before{
+                 content:"";
+                    position: absolute;
+                    z-index: 3;
+                    right: 20px;
+                    background: url(../img/tab-ornament.svg);
+                    background-position: center;
+                    width: 24px;
+                    height: 29px;
+            }
+        }
+    }
+    .container--tabs {
+        display: flex;
+        @media #{$xs} { 
+            flex-wrap: wrap;
+        }
+        .openTab{
+            height: auto!important;
+        }
+        .nav-tabs {
+            transition: height .3;
+            width: 25%; 
+            padding: 0 15px 0 0;
+            @media #{$xs} { 
+                width: 100%;
+                overflow: hidden;
+                height: 0;
+            }
+            .active{
+                border-top:1px solid transparent;
+                border-bottom:1px solid transparent;
+                a{
+                    position: relative;
+                    z-index: 2;
+                     &:after{
+                         width: 100%;
+                         background-color: #924042;
+                    }
+                }
+            }
+            li{
+                position: relative;
+                list-style: none;
+                border-top:1px solid #a87679;
+                border-bottom: 1px solid #a87679;
+                margin-top: -1px;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    border-top:1px solid transparent;
+                    border-bottom:1px solid transparent;
+                    a{
+                        &:after{
+                            background-color: #924042;
+                            width: 100%;
+                        }
+                    }
+                }
+                &:after{
+                    content:"";
+                    position: absolute;
+                    z-index: 3;
+                    left: 0;
+                    width: 6px;
+                    height: 100%;
+                    background-color: #5f0e12;
+                   
+                }
+                &:before{
+                    content:"";
+                    position: absolute;
+                    z-index: 3;
+                    left: 20px;
+                    background: url(../img/tab-ornament.svg);
+                    background-position: center;
+                    width: 24px;
+                    height: 29px;
+                }
+                a{
+                    padding: 20px;
+                    position: relative;
+                    z-index: 2;
+                    padding-left: 52px;
+                    font-size: 18px;
+                    color:#fff;
+                    display: block;
+                    width: 100%;
+                    &:after{
+                        content:"";
+                        position: absolute;
+                        z-index: -1;
+                        top: 0px;
+                        left: 0px;
+                        width: 0%;
+                        height: 100%;
+                         background-color: #5f0e12;
+                        transition: all .7s;
+                    }
+                  
+                }
+            }
+        }
+        .tab-content {
+            width: 75%;
+            padding-left:20px;
+            @media #{$xs} { 
+                width: 100%;
+                padding-left: 0px;
+            }
+            *{
+                color:#fff;
+            }
+            .tab-pane {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+        }
+
+    }
+
+}
+/////////////////////////////// END oferta
+
+/////////////////////////////// menu
+section#menu{
+    position: relative;
+    padding-top: 110px;
+     @media #{$xs} {
+         margin-bottom: 30px;
+         padding-top: 0px;
+     }
+    &:before{
+        content: "";
+        position: absolute;
+        top: -110px;
+        background-color: $red;
+        width: 100%;
+        height: calc(50% + 110px);
+         @media #{$xs} {
+             top: 0;
+             height: 50%;
+         }
+    }
+   .banner{
+        height: 350px;
+        position: relative;
+        // margin-top: 110px;
+        background: url(../img/bg-menu.png);
+        .wraper{
+            background-color: rgba(0, 0, 0, .5);
+            height: 350px;
+            .content{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                h2{
+                    margin-top: 0px;
+                    margin-bottom: 50px;
+                    @media #{$xs} {  
+                        font-size: 41px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+   }
+}
+/////////////////////////////// END o-nas
+
+/////////////////////////////// noclegi
+section#noclegi{
+    padding: 110px 0;
+    position: relative;
+    @media #{$xs} { 
+        padding: 30px 0;
+    }
+    .row{
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+    .left{
+        padding-right: 50px;
+        @media #{$xs} {  
+            padding-right: 15px;
+            order:1;
+        }
+    }
+    .right{
+        padding-left: 50px;
+        @media #{$xs} {  
+            padding-left: 15px;
+        }
+    }
+    .t-right{
+        @media #{$xs} {  
+            text-align: left;
+        }
+    }
+    .col-2{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    svg{
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        width: 37%;
+    }
+}
+/////////////////////////////// END noclegi
+
+/////////////////////////////// galeria
+section#galeria{
+    background-color: $red;
+    padding: 110px 0;
+     @media #{$xs} { 
+        padding: 30px 0;
+    }
+    .swiper-container{
+        overflow: hidden;
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+    }
+   
+    .pswp__bg{
+        opacity: .8!important;
+    }
+
+
+}
+/////////////////////////////// END galeria
+
+/////////////////////////////// kontakt
+section#kontakt{
+    position: relative;
+    .col-2{
+        flex: 0 0 55%;
+        max-width: 55%;
+        z-index: 2;
+        @media #{$xs} {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    .wrap-form{
+        background: #fbfaf5;
+        padding: 60px;
+         @media #{$xs} {
+             padding: 30px 0;
+         }
+        
+        .header-form{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            h2{
+                font-size: 45px;
+            }
+        }
+    }
+    .cover-map{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        @media #{$xs} {
+            position: relative;
+        }
+        #mapa-it{
+            width: 100%;
+            height: 600px;
+            @media #{$xs} {
+                height: 400px;
+            }
+        }
+    }
+    .gm-style-pbc{
+    background-color:rgba(0, 124, 219, 0.2) !important;
+    }
+    .gm-style-pbt{
+        color: #fff!important;
+    }
+    .gmnoprint{
+        display: none!important;
+    }
+
+}
+/////////////////////////////// END kontakt

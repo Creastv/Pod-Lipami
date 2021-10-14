@@ -4,6 +4,74 @@
     url("../fonts/Abril_Display_ExtraBold.otf") format("opentype"),
     url("../fonts/Abril_Display_ExtraBold.otf") format("truetype");
 }
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 h1, h2, h3, h4, h5, h6{
     font-family:"abril-display-extraBold";
+    color:$red;
+}
+h2{
+    font-size: 58px;
+    margin: 0;
+    @media #{$xs} {
+        font-size: 36px;
+    }
+}
+h3{
+    font-size: 30px;
+     @media #{$xs} {
+        font-size: 24px;
+    }
+}
+p{
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+a{
+    text-decoration:  none;
+}
+.s-big{
+    font-size: 1.25rem;
+}
+.c-main{
+    color:$red;
+}
+.c-white{
+    color:#fff;
+}
+.t-center{
+   text-align: center;
+}
+.t-right{
+   text-align: right;
+}
+
+.title-sec{
+    position: relative;
+    padding: 0 53px;
+    margin-bottom: 50px;
+    @media #{$xs} {
+       margin-bottom: 20px;
+    }
+
+    &:before, &:after{
+        content:"";
+        position: absolute;
+        background-image: url(/../img/ornament-title.svg);
+        width: 30px;
+        height: 43px;
+        top: 50%;
+    }
+    &:before{
+        transform: translate(-53px, -50%);
+    }
+    &:after{
+        transform: translate(20px, -50%) rotate(180deg);
+    }
+}
+.title-sec.c-white{
+    &:before, &:after{
+        background-image: url(/../img/ornament-title-white.svg);
+    }
 }

@@ -13,58 +13,496 @@
 
     <link rel="icon" href="img/favicon.ico" />
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
 
     <link rel="stylesheet" href="css/styles.css?v=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- photoswipe CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header id="header">
-      <nav>
-        <ul>
-          <li><a href="#slider" >Home</a></li>
-          <li><a href="#o-nas" >O nas</a></li>
-          <li><a href="#wesele" >Wesele</a></li>
-          <li><a href="#oferta" >Oferta</a></li>
-          <li><a href="#menu" >Menu</a></li>
-          <li><a href="#noclegi" >Noclegi</a></li>
-          <li><a href="#galeria" >Galeria</a></li>
-          <li><a href="#kontakt" >Kontakt</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <a href="index.html">Katowice | <img src="img/logo-pod-lipami.svg" alt="Pod Lipami"></a>
+      <div class="container">
+        <div class="row">
+          <nav>
+            <ul>
+              <li><a href="#slider" class="active">Home</a></li>
+              <li><a href="#o-nas" >O nas</a></li>
+              <li><a href="#wesele" >Wesele</a></li>
+              <li><a href="#oferta" >Oferta</a></li>
+              <li><a href="#menu" >Menu</a></li>
+              <li><a href="#noclegi" >Noclegi</a></li>
+              <li><a href="#galeria" >Galeria</a></li>
+              <li><a href="#kontakt" >Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="logo">
+            <a href="index.html"><span> Katowice </span> <img src="img/logo-pod-lipami.svg" alt="Pod Lipami"></a>
+          </div>
+          <div class="hamburger hidden hamburger--spin js-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+						<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+            </div>
+					</div>
+        </div>
       </div>
     </header>
     <main>
       <!-- slider -->
-      <section id="slider" class="slider"></section>
+      <section id="slider" class="section slider">
+         <!-- Swiper -->
+        <div class="swiper slider-home">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(/img/slider-1.png);">
+              <div class="box">
+                <div class="grad">
+                  <div class="content">
+                    <h1 class="title">Oferta wigilijna</h1>
+                    <a href="#" class="btn btn-first">Czytaj więcej</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(/img/slider-2.png);">
+              <div class="box">
+                <div class="grad">
+                  <div class="content">
+                    <h2 class="title">Poznaj niepowtarzalny klimat<br> i smak miejsca z duszą!</h2>
+                    <a href="#" class="btn btn-first">Czytaj więcej</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(/img/slider-3.png);">
+              <div class="box">
+                <div class="grad">
+                  <div class="content">
+                    <h2 class="title">Oferta sylwestrowa</h2>
+                    <a href="#" class="btn btn-first">Czytaj więcej</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pag"><div class="swiper-pagination"></div>
+        </div>
+      </section>
       <!-- END slider -->
       <!-- o-nas -->
-      <section id="o-nas"class="o-nas"></section>
+      <section id="o-nas" class="section o-nas" >
+        <div class="container">
+          <div class="row">
+            <div class="col-2" data-aos="fade-up"  data-aos-delay="300">
+              <h2>O nas</h2>
+              <p><span class="c-main p-big"><b>Rok 1906...</b></span></p>
+              <p>Ponad sto lat temu, w głowach dwóch architektów, którym zlecano zaprojektowanie kolonii robotniczej Giszowiec, narodził się pomysł... pomysł prosty, acz genialny.</p>
+              <p> Zillmannowie postanowili wybudować osiedle absolutnie unikatowe, którego architektura utrzymana będzie w stylu wiejskim, projekt całości oparty będzie na idei „Miasta ogrodu” , a w samym centrum stanie okazała i tętniąca życiem Gospoda.</p>
+              <p>Jak pomyśleli, tak zrobili, a dzięki ich inicjatywie powstało jedno z najpiękniejszych, najzieleńszych i najbardziej sielskich miejsc na Górnym Śląsku, które do dziś jest inspiracją dla filmowców, pisarzy, malarzy, ale i kucharzy.</p>
+               <p><span class="c-main p-big"><b>Rok 2006...</b></span></p>
+               <p>Swoje drzwi otwiera restauracja Dworek „Pod Lipami”. To miejsce, gdzie krzyżują się szlaki kulinarne nie tylko polskie ale i światowe. Panująca tu atmosfera, doskonały styl i elegancja zaspokoi najbardziej wybredne gusta.</p>
+               <p>Oferujemy Państwu szerokie menu, konkurencyjne ceny, doskonałe walory smakowe i odżywcze serwowanych potraw, wyłącznie pewnych i sprawdzonych dostawców, kompetentną, wykwalifikowaną i miłą obsługę oraz najwyższą jakość i niepowtarzalny smak naszej kuchni.</p>
+            </div>
+            <div class="col-2" data-aos="fade-up"  data-aos-delay="300">
+              <img class="img-responsive" src="/img/o-nas.png" alt="O nas">
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- END o-nas -->
       <!-- wesele -->
-      <section id="wesele" class="wesele"></section>
+      <section id="wesele" class="section wesele" >
+        <div class="container">
+          <div class="row">
+            <div class="col" data-aos="fade-up"  data-aos-delay="300">
+              <h2 class="title-sec t-center">Wesele</h2>
+            </div>
+            <div class="col t-center" data-aos="fade-up"  data-aos-delay="300">
+              <p><b class="p-big">Wesela organizowane w naszej restauracji mają wyjątkowy charakter.</b></p>
+              <p> Z ogromną przyjemnością pomożemy Państwu w organizacji tak ważnego dnia w życiu każdego człowieka. Do Państwa dyspozycji oddajemy salę kameralną, mieszczącą do 52 osób oraz klimatyzowaną salę balową (ilość osób zależna od ustawienia sali, od 75 do 160 osób). Dodatkowo sala balowa wyposażona jest w dużą scenę wraz z dwoma garderobami oraz stylowy balkon, mieszczący dodatkowo do 30 osób. Chętnie udzielimy wielu cennych wskazówek, dotyczących skomponowania odpowiedniego menu, uwzględniając specjalne życzenia i preferencje Państwa Młodych. Uczestnikom imprez organizowanych w naszej restauracji zapewniamy miejsca parkingowe. Restauracja w pełni przystosowana jest dla osób niepełnosprawnych. Posiadamy również pokoje gościnne w bezpośrednim sąsiedztwie naszego lokalu.<br> Dla każdej Pary Młodej przygotowaliśmy zaproszenie na rocznicowy obiad.</p>
+            </div>
+          </div>
+          <div class="row t-center">
+            <div class="col-3" data-aos="fade-up"  data-aos-delay="300">
+              <div class="oferta">
+                <img class="img-responsive" src="/img/oferta-weselna.png" alt="Oferta weselna">
+                <h3 >Oferta weselna</h3>
+                <a href="#" class="btn btn-second">zobacz oferte</a>
+              </div>
+            </div>
+            <div class="col-3" data-aos="fade-up"  data-aos-delay="400">
+              <div class="oferta">
+                <img class="img-responsive" src="/img/oferta-weselna.png" alt="Oferta weselna">
+                <h3>Stół wiejski</h3>
+                <a href="#" class="btn btn-second">zobacz oferte</a>
+              </div>
+            </div>
+            <div class="col-3" data-aos="fade-up"  data-aos-delay="500">
+              <div class="oferta">
+                <img class="img-responsive" src="/img/stol-wiejski.png" alt="Stół wiejski">
+                <h3>Stół słodki</h3>
+                <a href="#" class="btn btn-second">zobacz oferte</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg viewBox="0 0 720 881">
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" stroke="#707070" d="M0 0h720v881H0z" transform="translate(720 4217)"/>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)" opacity=".2" transform="translate(-720 -4217)">
+            <path fill="#e5d5bb" fill-rule="evenodd" d="m758.033 4648.635 11.267 17.839 15.335 23.159 14.709 18.778 10.954 20.03 13.145 20.03 10.015 17.839 9.076 14.4 10.016 13.144 12.206 20.03 14.4 25.35 13.145 24.411 13.449 21.279 12.206 22.22h10.954l12.206-22.22 13.458-21.282 13.145-24.411 14.4-25.35 12.203-20.027 10.015-13.145 8.763-14.4 10.015-17.839 13.458-20.03 10.954-20.03 14.4-18.778 15.648-23.159 10.954-17.839 27.228 20.03 15.648-21.282 10.015-13.771 11.58-13.771 10.641-11.58 176.826 22.534v-3.44l-166.817-31.3 50.075-73.234 122.683 3.756v-2.817l-109.851-12.829 84.193-109.538-4.069-7.511-101.4 98.584-47.263-117.988h-3.756l41.312 125.186-62.593 76.991-72.608-170.881-1.878 4.694 64.784 176.513-43.189 60.716-17.213-4.694-17.839-6.572-17.839-4.695-15.336-6.881-25.663-17.531-19.4-19.717-11.893-19.4-7.824-24.411-6.572-24.411-3.443-27.541-1.565-23.472 8.137-31.3 11.267-21.282 14.709-25.976 21.282-22.534 16.274-19.717 27.541-15.961 25.973-13.147 25.976-6.572 25.976-3.128h19.4l18.152 2.5 23.472 5.32 35.365 5.633 28.167 2.5 28.793 1.565h31.3l31.3-3.756 31.3-5.946 31.3-5.32v71.364l6.572 24.411 8.137 27.854 4.998 25.975 8.137 20.969 8.137 21.282 8.137 22.534 3.13 22.847 1.565 19.4v29.419l-4.695 22.534-10.015 29.419-11.267 25.976-16.273 20.972-12.832 16.274-17.839 17.839-21.282 16.274-24.411 11.267-29.106 10.015-35.678 1.565-27.852-8.137-31.609-11.267-31.3-19.717-23.159-20.656-17.838-17.839-13.458-17.839-6.259-5.007-6.572 9.7-11.267 17.526-10.954 22.221-15.648 21.282-15.336 25.347-14.4 20.969-14.709 24.411-9.7 21.282-12.204 20.038-7.824 13.145 6.572 4.382 8.765-7.827 7.824-10.954 10.015-14.4 16.587-17.839 14.4-16.587 16.587-16.587 20.03-22.221 15.648-12.206 15.335-6.572 15.648 2.191 10.015 7.824 8.763 8.763 7.824 10.015-2.191 14.4-6.572 14.4-10.015 8.763-23.477 12.2-18.778 5.633-16.587 7.824-17.839 6.572-10.954 4.381-13.458 9.076-20.969 12.206-17.836 12.206-8.763 7.511-3.443 7.824 5.633 3.443 15.648-3.443 24.411-2.191 28.793-5.633 15.335-5.32 13.458-3.443 12.206-4.382 10.954-2.191 14.4-4.381 12.206-4.694 15.648-7.511 13.458-3.443v2.5a64.784 64.784 0 1 1 0 7.511l-11.58 2.191-8.763 4.382-8.763 5.946-8.768 5.636-10.954 4.382-4.694 6.885 4.694 6.572 8.763 5.32h10.954l7.824 3.443 11.267 4.382 13.145 4.382 9.075 5.634 10.954 5.633 12.206 6.572 10.015 5.633 8.763 5.633 9.076 5.32 8.763 6.885 7.511 5.007a67.967 67.967 0 1 1-4.694 5.633l-16.274-13.145-10.954-4.382-12.206-5.32-13.145-7.511-12.206-4.382-16.587-4.376-9.076-2.191-5.32 4.381 2.191 6.572 3.13 7.824v7.514a64.158 64.158 0 1 1-20.969-1.565l5.633-4.694 1.878-9.076-5.633-6.576-8.763-6.572-16.9-5.32h-17.837l-17.839 2.191-17.526 2.191-22.221 5.633-18.465 5.32-18.778 7.824-16.587 10.015-12.206 8.763-10.015 10.015-8.763 11.266-5.633 12.206v41.937l3.13 17.839 5.633 15.648 3.443 15.335 3.13 12.206h-96.397l3.443-12.206 3.443-15.335 5.32-15.648 3.443-17.839v-41.937l-5.633-12.206-8.763-11.267-10.015-10.015-12.206-8.763-13.771-10.015-19.091-7.824-18.778-5.32-24.724-5.633-17.839-2.191-17.526-2.187H723.92l-16.587 4.382-8.763 6.572-5.633 6.572v9.074l5.633 4.694a64.158 64.158 0 1 1-20.656 1.565v-7.511l5.32-6.885 2.191-6.572-5.633-4.381-8.763 2.191-16.587 4.382-12.206 4.382-14.4 6.885-12.206 5.32-11.267 4.381-15.961 13.145a62.593 62.593 0 0 1 13.148 38.804 64.158 64.158 0 1 1-64.158-62.593 65.1 65.1 0 0 1 46.319 19.717l7.511-5.007 8.763-6.885 9.076-5.32 8.763-5.633 10.015-5.633 12.206-6.572 10.954-5.633 9.076-5.633 13.145-4.382 11.267-4.382 7.511-3.443h11.267l8.763-5.32 4.382-6.572-4.382-6.885-10.954-4.382-8.45-6.572-9.389-5.946-8.763-4.381-11.893-2.191a62.593 62.593 0 1 1 0-7.511v-2.5l13.458 3.443 15.335 7.511 12.206 4.695 14.4 4.382 11.267 2.191 12.206 4.381 13.145 3.443 15.648 5.32 28.793 5.633 24.411 2.191 15.648 3.443 5.32-3.443-3.13-7.824-9.076-7.511-17.53-12.213-21.282-12.206-13.148-9.077-10.015-3.13-17.523-6.57-16.587-7.824-19.091-5.633-23.159-12.206-10.641-10.015-6.572-14.4-2.191-14.4 7.511-10.015 9.076-8.763 10.015-7.824 15.335-2.191 15.648 6.572 15.648 12.206 19.717 22.221 16.587 16.587 14.709 16.587 16.587 17.839 10.015 14.4 7.511 10.954 9.076 7.824 6.572-4.381-7.822-13.138-12.206-20.034-10.015-21.282-14.4-24.411-14.4-20.969-15.335-25.35-15.648-21.282-10.954-22.221-11.267-17.526-6.885-9.7-5.946 5.007-11.58 17.839-17.839 17.839-22.531 20.968-31.3 19.717-29.419 11.267-27.533 8.138-35.678-1.565-29.106-10.015-24.411-11.267-21.282-16.275-17.839-17.839-12.832-16.274-16.274-20.965-11.58-25.98-9.7-29.419-4.696-22.533v-29.419l1.565-19.4 3.13-22.847 8.137-22.534 8.137-21.282 8.137-20.969 5.007-25.976 8.137-27.857 6.26-24.411 1.878-29.106-1.878-19.4v-22.537l31.3 5.32 31.3 5.946 31.3 3.756h29.732l28.793-1.565 27.854-2.5 35.678-5.633 21.908-5.32 18.152-2.5h19.717l25.976 3.13 25.976 6.572 25.976 13.145 27.541 15.961 16.274 19.717 21.282 22.534 14.4 25.976 11.58 21.282 9.076 30.671-1.878 22.534-3.13 27.541-6.587 24.403-8.137 24.411-11.267 19.4-19.4 19.717-25.976 17.842-14.709 6.572-17.839 4.694-17.839 6.572-17.213 4.692-43.815-59.776 62.593-176.513v-4.694l-71.986 172.76-62.592-76.99 40.684-127.064h-4.069l-47.57 118.614-98.272-97.645-3.756 7.511 84.188 109.538-110.163 12.831v2.817l122.683-3.756 50.075 73.234-166.811 31.3-1.565 3.443 175.261-24.1 10.641 11.58 11.267 13.771 10.015 13.771 15.961 21.282Z"/>
+          </g>
+        </svg>
+      </section>
       <!-- END wesele -->
       <!-- oferta -->
-      <section id="oferta" class="oferta"></section>
+      <section id="oferta" class="section oferta" >
+        <div class="container">
+          <div class="row">
+            <div class="col" data-aos="fade-up"  data-aos-delay="300">
+              <h2  class="title-sec t-center c-white" >Oferta</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="container--tabs" data-aos="fade-up"  data-aos-delay="300">
+                  <div class="toggle">
+                    <p>Wybierz oferte</p>
+                  </div> 
+                  <ul class="nav nav-tabs" data-aos="fade-up"  data-aos-delay="300">
+                    <li class="active"><a href="#tab-1">Imprexy okolicznościowe</a></li>
+                    <li class=""><a href="#tab-2">Catering</a></li>
+                    <li class=""><a href="#tab-3">Voucher</a></li>
+                    <li class=""><a href="#tab-4">Business</a></li>
+                    <li class=""><a href="#tab-5">Twoje przyjęcie w ogrodzie</a></li>
+                    <li class=""><a href="#tab-6">Oferta świąteczna</a></li>
+                    <li class=""><a href="#tab-7">Oferta wigiglijna</a></li>
+                    <li class=""><a href="#tab-8">Oferta sylwestrowa</a></li>
+                  </ul>
+                  <div class="tab-content" data-aos="fade-up"  data-aos-delay="400">
+                    <div id="tab-1" class="tab-pane active"> 
+                      <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+                      <span class="col-md-10">
+                        <h3>Imprezy okolicznościowe</h3>
+                        <img class="img-responsive" src="/img/imprezy-okolicznościowe.png" alt="Imprezy okolicznościowe">
+                        <p>Jeżeli planują Państwo organizację małego przyjęcia okolicznościowego czy większej imprezy firmowej zapraszamy do współpracy. W naszej restauracji istnieje wiele możliwości aranżacji pomieszczeń oraz ustawienia stołów.</p>
+                        <p> Wydzielone przestrzenie pozwalają na zapewnienie prywatności podczas trwania przyjęcia.</p>
+                      </span>
+                    </div> 
+                    <div id="tab-2" class="tab-pane">
+                      <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                      <span class="col-md-10">
+                        <h3>Catering</h3>
+                        <img class="img-responsive" src="/img/imprezy-okolicznościowe.png" alt="Catering">
+                        <p>Jeżeli planują Państwo organizację małego przyjęcia okolicznościowego czy większej imprezy firmowej zapraszamy do współpracy. W naszej restauracji istnieje wiele możliwości aranżacji pomieszczeń oraz ustawienia stołów.</p>
+                        <p> Wydzielone przestrzenie pozwalają na zapewnienie prywatności podczas trwania przyjęcia.</p>
+                      </span>
+                    </div>
+                    <div id="tab-3" class="tab-pane">
+                      <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+                      <span class="col-md-10">
+                        <h3>Voucher</h3>
+                        <img class="img-responsive" src="/img/imprezy-okolicznościowe.png" alt="Voucher">
+                        <p>Jeżeli planują Państwo organizację małego przyjęcia okolicznościowego czy większej imprezy firmowej zapraszamy do współpracy. W naszej restauracji istnieje wiele możliwości aranżacji pomieszczeń oraz ustawienia stołów.</p>
+                        <p> Wydzielone przestrzenie pozwalają na zapewnienie prywatności podczas trwania przyjęcia.</p>
+                      </span>
+                    </div>
+                     <div id="tab-4" class="tab-pane">
+                      <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+                      <span class="col-md-10">
+                        <h3>Business</h3>
+                         <img class="img-responsive" src="/img/imprezy-okolicznościowe.png" alt="Business">
+                        <p>Jeżeli planują Państwo organizację małego przyjęcia okolicznościowego czy większej imprezy firmowej zapraszamy do współpracy. W naszej restauracji istnieje wiele możliwości aranżacji pomieszczeń oraz ustawienia stołów.</p>
+                        <p> Wydzielone przestrzenie pozwalają na zapewnienie prywatności podczas trwania przyjęcia.</p>
+                      </span>
+                    </div>
+                    <div id="tab-5" class="tab-pane">
+                      <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+                      <span class="col-md-10">
+                        <h3>Twoje przyjęcie w ogrodzie</h3>
+                        <img class="img-responsive" src="/img/imprezy-okolicznościowe.png" alt="Twoje przyjęcie w ogrodzie">
+                        <p>Jeżeli planują Państwo organizację małego przyjęcia okolicznościowego czy większej imprezy firmowej zapraszamy do współpracy. W naszej restauracji istnieje wiele możliwości aranżacji pomieszczeń oraz ustawienia stołów.</p>
+                        <p> Wydzielone przestrzenie pozwalają na zapewnienie prywatności podczas trwania przyjęcia.</p>
+                      </span>
+                    </div>
+                    <div id="tab-6" class="tab-pane">
+                      <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+                      <span class="col-md-10">
+                        <h3>Oferta świąteczna</h3>
+                         <img class="img-responsive" src="/img/imprezy-okolicznościowe.png" alt="Oferta świąteczna">
+                        <p>Jeżeli planują Państwo organizację małego przyjęcia okolicznościowego czy większej imprezy firmowej zapraszamy do współpracy. W naszej restauracji istnieje wiele możliwości aranżacji pomieszczeń oraz ustawienia stołów.</p>
+                        <p> Wydzielone przestrzenie pozwalają na zapewnienie prywatności podczas trwania przyjęcia.</p>
+                      </span>
+                    </div>
+                    <div id="tab-7" class="tab-pane">
+                      <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+                      <span class="col-md-10">
+                        <h3>Oferta wigilijna</h3>
+                         <img class="img-responsive" src="/img/imprezy-okolicznościowe.png" alt="Oferta wigilijna">
+                        <p>Jeżeli planują Państwo organizację małego przyjęcia okolicznościowego czy większej imprezy firmowej zapraszamy do współpracy. W naszej restauracji istnieje wiele możliwości aranżacji pomieszczeń oraz ustawienia stołów.</p>
+                        <p> Wydzielone przestrzenie pozwalają na zapewnienie prywatności podczas trwania przyjęcia.</p>
+                      </span>
+                    </div>
+                    <div id="tab-8" class="tab-pane">
+                      <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+                      <span class="col-md-10">
+                        <h3>Oferta sylwestrowa</h3>
+                         <img class="img-responsive" src="/img/imprezy-okolicznościowe.png" alt="Oferta sylwestyrowa">
+                        <p>Jeżeli planują Państwo organizację małego przyjęcia okolicznościowego czy większej imprezy firmowej zapraszamy do współpracy. W naszej restauracji istnieje wiele możliwości aranżacji pomieszczeń oraz ustawienia stołów.</p>
+                        <p> Wydzielone przestrzenie pozwalają na zapewnienie prywatności podczas trwania przyjęcia.</p>
+                      </span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- END oferta -->
       <!-- menu -->
-      <section id="menu" class="menu"></section>
+      <section id="menu" class="section  menu" >
+        <div class="container">
+          <div class="row">
+            <div class="col" data-aos="fade-up"  data-aos-delay="300" >
+              <div class="banner t-center">
+                <div class="wraper">
+                  <div class="content">
+                    <h2 class="c-white" data-aos="fade-up"  data-aos-delay="200" data-aos-anchor-placement="top-bottom">Menu restauracji</h2>
+                    <a href="#" class="btn btn-first" data-aos="fade-up"  data-aos-delay="400" data-aos-anchor-placement="top-bottom">Sprawdź</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- END menu -->
       <!-- noclegi -->
-      <section id="noclegi" class="noclegi"></section>
+      <section id="noclegi" class="section noclegi" >
+        <div class="container">
+          <div class="row">
+            <div class="col"  data-aos="fade-up"  data-aos-delay="300">
+              <h2  class="title-sec t-center">Noclegi</h2>
+            </div>
+          </div>
+          <div class="row"  data-aos="fade-up"  data-aos-delay="300">
+            <div class="col-2 left">
+              <img class="img-responsive"  src="/img/nocleg3.png" alt="pokoje typu studio 1-4-osobowe w zabytkowej części Katowic – Giszowcu">
+            </div>
+            <div class="col-2 right">
+              <p>Oferujemy Państwu pokoje oraz pokoje typu studio 1-4-osobowe w zabytkowej części Katowic – Giszowcu. W każdym pokoju znajdują się łóżka, szafa, biurko, telewizor z płaskim ekranem oraz łazienka z ręcznikami. W pokojach typu studio znajdują się aneksy kuchenne ( lodówka, płyta grzewcza).</p>
+            </div>
+          </div>
+          <div class="row"  data-aos="fade-up"  data-aos-delay="300">
+            <div class="col-2 t-right left">
+              <p>Na terenie posesji znajduje się parking.<br> Możliwość zamówienia śniadania w Restauracji Dworek<br> „Pod Lipami”. <br>Odbiór kluczy w Restauracji Dworek „Pod Lipami ” Plac <br>„Pod Lipami” 1 Katowice.</p>
+            </div>
+            <div class="col-2 right">
+               <img class="img-responsive" src="/img/nocleg4.png" alt="pokoje typu studio 1-4-osobowe w zabytkowej części Katowic – Giszowcu">
+            </div>
+          </div>
+        </div> 
+        <svg viewBox="0 0 720 881">
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" stroke="#707070" d="M0 0h720v881H0z" transform="translate(720 4217)"/>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)" transform="translate(-720 -4217)">
+            <path fill="#e5d5bb" fill-rule="evenodd" d="m1273.033 4648.635 11.267 17.839 15.335 23.159 14.709 18.778 10.954 20.03 13.145 20.03 10.015 17.839 9.076 14.4 10.016 13.144 12.206 20.03 14.4 25.35 13.145 24.411 13.449 21.279 12.206 22.22h10.954l12.206-22.22 13.458-21.282 13.145-24.411 14.4-25.35 12.203-20.027 10.015-13.145 8.763-14.4 10.015-17.839 13.458-20.03 10.954-20.03 14.4-18.778 15.648-23.159 10.954-17.839 27.228 20.03 15.648-21.282 10.015-13.771 11.58-13.771 10.641-11.58 176.826 22.534v-3.44l-166.817-31.3 50.075-73.234 122.683 3.756v-2.817l-109.851-12.829 84.193-109.538-4.069-7.511-101.4 98.584-47.263-117.988h-3.756l41.312 125.186-62.593 76.991-72.608-170.881-1.878 4.694 64.784 176.513-43.189 60.716-17.213-4.694-17.839-6.572-17.839-4.695-15.336-6.881-25.663-17.531-19.4-19.717-11.893-19.4-7.824-24.411-6.572-24.411-3.443-27.541-1.565-23.472 8.137-31.3 11.267-21.282 14.709-25.976 21.282-22.534 16.274-19.717 27.541-15.961 25.973-13.147 25.976-6.572 25.976-3.128h19.4l18.152 2.5 23.472 5.32 35.365 5.633 28.167 2.5 28.793 1.565h31.3l31.3-3.756 31.3-5.946 31.3-5.32v71.364l6.572 24.411 8.137 27.854 4.998 25.975 8.137 20.969 8.137 21.282 8.137 22.534 3.13 22.847 1.565 19.4v29.419l-4.695 22.534-10.015 29.419-11.267 25.976-16.273 20.972-12.832 16.274-17.839 17.839-21.282 16.274-24.411 11.267-29.106 10.015-35.678 1.565-27.852-8.137-31.609-11.267-31.3-19.717-23.159-20.656-17.838-17.839-13.458-17.839-6.259-5.007-6.572 9.7-11.267 17.526-10.954 22.221-15.648 21.282-15.336 25.347-14.4 20.969-14.709 24.411-9.7 21.282-12.204 20.038-7.824 13.145 6.572 4.382 8.765-7.827 7.824-10.954 10.015-14.4 16.587-17.839 14.4-16.587 16.587-16.587 20.03-22.221 15.648-12.206 15.335-6.572 15.648 2.191 10.015 7.824 8.763 8.763 7.824 10.015-2.191 14.4-6.572 14.4-10.015 8.763-23.477 12.2-18.778 5.633-16.587 7.824-17.839 6.572-10.954 4.381-13.458 9.076-20.969 12.206-17.836 12.206-8.763 7.511-3.443 7.824 5.633 3.443 15.648-3.443 24.411-2.191 28.793-5.633 15.335-5.32 13.458-3.443 12.206-4.382 10.954-2.191 14.4-4.381 12.206-4.694 15.648-7.511 13.458-3.443v2.5a64.784 64.784 0 1 1 0 7.511l-11.58 2.191-8.763 4.382-8.763 5.946-8.768 5.636-10.954 4.382-4.694 6.885 4.694 6.572 8.763 5.32h10.954l7.824 3.443 11.267 4.382 13.145 4.382 9.075 5.634 10.954 5.633 12.206 6.572 10.015 5.633 8.763 5.633 9.076 5.32 8.763 6.885 7.511 5.007a67.967 67.967 0 1 1-4.694 5.633l-16.274-13.145-10.954-4.382-12.206-5.32-13.145-7.511-12.206-4.382-16.587-4.376-9.076-2.191-5.32 4.381 2.191 6.572 3.13 7.824v7.514a64.158 64.158 0 1 1-20.969-1.565l5.633-4.694 1.878-9.076-5.633-6.576-8.763-6.572-16.9-5.32h-17.837l-17.839 2.191-17.526 2.191-22.221 5.633-18.465 5.32-18.778 7.824-16.587 10.015-12.206 8.763-10.015 10.015-8.763 11.266-5.633 12.206v41.937l3.13 17.839 5.633 15.648 3.443 15.335 3.13 12.206h-96.397l3.443-12.206 3.443-15.335 5.32-15.648 3.443-17.839v-41.937l-5.633-12.206-8.763-11.267-10.015-10.015-12.206-8.763-13.771-10.015-19.091-7.824-18.778-5.32-24.724-5.633-17.839-2.191-17.526-2.187h-17.839l-16.587 4.382-8.763 6.572-5.633 6.572v9.074l5.633 4.694a64.158 64.158 0 1 1-20.656 1.565v-7.511l5.32-6.885 2.191-6.572-5.633-4.381-8.763 2.191-16.587 4.382-12.206 4.382-14.4 6.885-12.206 5.32-11.267 4.381-15.961 13.145a62.593 62.593 0 0 1 13.148 38.804 64.158 64.158 0 1 1-64.158-62.593 65.1 65.1 0 0 1 46.319 19.717l7.511-5.007 8.763-6.885 9.076-5.32 8.763-5.633 10.015-5.633 12.206-6.572 10.954-5.633 9.076-5.633 13.145-4.382 11.267-4.382 7.511-3.443h11.267l8.763-5.32 4.382-6.572-4.382-6.885-10.954-4.382-8.45-6.572-9.389-5.946-8.763-4.381-11.893-2.191a62.593 62.593 0 1 1 0-7.511v-2.5l13.458 3.443 15.335 7.511 12.206 4.695 14.4 4.382 11.267 2.191 12.206 4.381 13.145 3.443 15.648 5.32 28.793 5.633 24.411 2.191 15.648 3.443 5.32-3.443-3.13-7.824-9.076-7.511-17.53-12.213-21.282-12.206-13.148-9.077-10.015-3.13-17.523-6.57-16.587-7.824-19.091-5.633-23.159-12.206-10.641-10.015-6.572-14.4-2.191-14.4 7.511-10.015 9.076-8.763 10.015-7.824 15.335-2.191 15.648 6.572 15.648 12.206 19.717 22.221 16.587 16.587 14.709 16.587 16.587 17.839 10.015 14.4 7.511 10.954 9.076 7.824 6.572-4.381-7.822-13.138-12.206-20.034-10.015-21.282-14.4-24.411-14.4-20.969-15.335-25.35-15.648-21.282-10.954-22.221-11.267-17.526-6.885-9.7-5.946 5.007-11.58 17.839-17.839 17.839-22.531 20.968-31.3 19.717-29.419 11.267-27.533 8.138-35.678-1.565-29.106-10.015-24.411-11.267-21.282-16.275-17.839-17.839-12.832-16.274-16.274-20.965-11.58-25.98-9.7-29.419-4.696-22.533v-29.419l1.565-19.4 3.13-22.847 8.137-22.534 8.137-21.282 8.137-20.969 5.007-25.976 8.137-27.857 6.26-24.411 1.878-29.106-1.878-19.4v-22.537l31.3 5.32 31.3 5.946 31.3 3.756h29.732l28.793-1.565 27.854-2.5 35.678-5.633 21.908-5.32 18.152-2.5h19.717l25.976 3.13 25.976 6.572 25.976 13.145 27.541 15.961 16.274 19.717 21.282 22.534 14.4 25.976 11.58 21.282 9.076 30.671-1.878 22.534-3.13 27.541-6.587 24.403-8.137 24.411-11.267 19.4-19.4 19.717-25.976 17.842-14.709 6.572-17.839 4.694-17.839 6.572-17.213 4.692-43.815-59.776 62.593-176.513v-4.694l-71.986 172.76-62.592-76.99 40.684-127.064h-4.069l-47.57 118.614-98.272-97.645-3.756 7.511 84.188 109.538-110.163 12.831v2.817l122.683-3.756 50.075 73.234-166.811 31.3-1.565 3.443 175.261-24.1 10.641 11.58 11.267 13.771 10.015 13.771 15.961 21.282Z" opacity=".2"/>
+          </g>
+        </svg>
+      </section>
       <!-- END noclegi -->
       <!-- galeria -->
-      <section id="galeria" class="galeria"></section>
+      <section id="galeria" class="section galeria" >
+        <div class="container">
+          <div class="row">
+            <div class="col" data-aos="fade-up"  data-aos-delay="300">
+              <h2 class="title-sec t-center c-white">Galeria</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"  data-aos="fade-up"  data-aos-delay="300">
+            <div class="swiper-container gallery">
+              <ul class="swiper-wrapper my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                <li id="1" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a id="first" title="click to zoom-in" href="/img/nocleg4.png" itemprop="contentUrl" data-size="525x314">
+                    <img class="img-responsive" src="/img/nocleg4.png" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </li>
+                <li id="2" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a id="first" title="click to zoom-in" href="/img/oferta-weselna.png" itemprop="contentUrl" data-size="525x314">
+                    <img class="img-responsive" src="/img/oferta-weselna.png" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </li>
+                <li id="3" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a id="first" title="click to zoom-in" href="/img/stol-wiejski.png" itemprop="contentUrl" data-size="525x314">
+                    <img class="img-responsive" src="/img/stol-wiejski.png" itemprop="thumbnail" alt="Image description" />
+                  </a>
+                </li>
+              </ul>
+              <div class="pag"><div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <!-- https://photoswipe.com/documentation/getting-started.html -->
+            <!-- add PhotoSwipe (.pswp) element to DOM -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="pswp__bg"></div>
+              <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                  <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                  </div>
+                  <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                  </button>
+                  <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                  </button>
+                  <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- END galeria -->
+
       <!-- kontakt -->
-      <section id="kontakt" class="kontakt"></section>
+      <section id="kontakt" class="section kontakt">
+        <div class="container">
+          <div class="row">
+            <div class="col-2"  data-aos="fade-right">
+              <div class="wrap-form">
+                <div class="header-form">
+                  <h2 class="c-main">Kontakt</h2>
+                  <img src="img/logo-pod-lipami.svg" alt="Pod Lipami">
+                </div>
+                <form action="">
+                  <div class="g-form">
+                  <input type="text" name="name" id="name" placeholder="Imię i nazwisko:">
+                  </div>
+                  <div class="g-form">
+                  <input type="tel" name="phone" id="phone" placeholder="Telefon:">
+                  </div>
+                  <div class="g-form">
+                  <input type="email" name="email" id="email" placeholder="E-mail:">
+                  </div>
+                  <div class="g-form">
+                  <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Wiadomość:"></textarea>
+                  </div>
+                  <div class="g-form">
+                  <button type="submit">Wyślij</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cover-map">
+            <div class="wraper">
+              <div id="mapa-it"></div>
+            </div>
+        </div>
+      </section>
       <!-- END kontakt -->
       
     </main>
     <footer id="footer">
-
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <img src="/img/logo-white.svg" alt="Pod Lipami - Logo">
+          </div>
+          <div class="col2">
+            <p>Restauracja Dworek „Pod Lipami” <br>PLAC POD LIPAMI 1<br>40-476 KATOWICE</p>
+          </div>
+          <div class="col3">
+            <ul>
+              <li>
+                <a href="tel:327 939 551">
+                  <svg width="11.818" height="20" viewBox="0 0 11.818 20"><g transform="translate(-10 -2)"><path style="fill:#fff;" d="M19.545,2H12.273A2.274,2.274,0,0,0,10,4.273V19.727A2.274,2.274,0,0,0,12.273,22h7.273a2.274,2.274,0,0,0,2.273-2.273V4.273A2.274,2.274,0,0,0,19.545,2ZM15.909,21.091a1.364,1.364,0,1,1,1.364-1.364A1.362,1.362,0,0,1,15.909,21.091ZM20,17.455H11.818V4.727H20Z"></path></g></svg> 
+                  327939551
+                </a>
+              </li>
+              <li>
+                <a href="tel:0048504758675">
+                  <svg width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-1 -3)"><path style="fill:#fff;" d="M17.818,23A16.837,16.837,0,0,1,1,6.182a.453.453,0,0,1,.133-.321L3.86,3.133a.454.454,0,0,1,.643,0L9.049,7.678a.454.454,0,0,1,0,.643L6.643,10.727l6.63,6.63,2.406-2.406a.454.454,0,0,1,.643,0L20.867,19.5a.454.454,0,0,1,0,.643l-2.727,2.727A.453.453,0,0,1,17.818,23Z"></path></g></svg>
+                  +48 504 75 86 75
+                </a>
+              </li>
+              <li>
+                <a href="tel: 0048608878928">
+                  <svg width="20" height="20" viewBox="0 0 20 20"><g transform="translate(-1 -3)"><path style="fill:#fff;" d="M17.818,23A16.837,16.837,0,0,1,1,6.182a.453.453,0,0,1,.133-.321L3.86,3.133a.454.454,0,0,1,.643,0L9.049,7.678a.454.454,0,0,1,0,.643L6.643,10.727l6.63,6.63,2.406-2.406a.454.454,0,0,1,.643,0L20.867,19.5a.454.454,0,0,1,0,.643l-2.727,2.727A.453.453,0,0,1,17.818,23Z"></path></g></svg>
+                  +48 608 87 89 28
+                </a>
+              </li>
+              <li>
+                <a href="mailto:dworekpodlipamikatowice@op.pl">
+                  <svg width="20.77" height="15.82" viewBox="0 0 20.77 15.82"><g transform="translate(0 -61)"><path style="fill:#fff;" d="M43.622,61H26.5a1.8,1.8,0,0,0-.782.183l9.3,9.3,2.085-2h0l7.3-7.3A1.8,1.8,0,0,0,43.622,61Z" transform="translate(-24.678 0)"></path><path style="fill:#fff;" d="M345.08,86.728l-6.867,6.867,6.867,6.867a1.8,1.8,0,0,0,.183-.782V87.51A1.8,1.8,0,0,0,345.08,86.728Z" transform="translate(-324.493 -24.684)"></path><path style="fill:#fff;" d="M.183,86.721A1.8,1.8,0,0,0,0,87.5v12.17a1.8,1.8,0,0,0,.183.782L7.05,93.588Z" transform="translate(0 -24.678)"></path><path style="fill:#fff;" d="M37.53,277.211l-2.085,2a.608.608,0,0,1-.86,0l-2-2-6.867,6.867a1.8,1.8,0,0,0,.782.183H43.615a1.8,1.8,0,0,0,.782-.183Z" transform="translate(-24.671 -207.44)"></path></g></svg>
+                  dworekpodlipamikatowice@op.pl
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row"><div class="col"><hr></div></div>
+        <div class="row inf">
+          
+          <div class="col">
+            <p>© 2020 - Dworek Pod Lipami | Realizacja: <a href="https://singlepage.pl" target="_blank">singlepage.pl</a></p>
+          </div>
+          <div class="col">
+            <ul class="socialmedia">
+              <li><a href="https://facebook.com/" title="Facebook" rel="nofallow noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="19.053" height="19.053" viewBox="0 0 19.053 19.053"><defs><style>.a{fill:#e5d5bb;}</style></defs><path class="a" d="M6.732,5H22.321a1.745,1.745,0,0,1,1.732,1.732V22.321a1.745,1.745,0,0,1-1.732,1.732H6.732A1.745,1.745,0,0,1,5,22.321V6.732A1.745,1.745,0,0,1,6.732,5Zm0,1.732V22.321h8.39V16.475H12.849v-2.6h2.272V11.928a3.131,3.131,0,0,1,3.356-3.437c.957,0,1.79.049,2.03.081v2.355H19.1c-1.085,0-1.271.514-1.271,1.272v1.678H20.4l-.325,2.6H17.829v5.846h4.492V6.732Z" transform="translate(-5 -5)"/></svg></a></li>
+              <li><a href="https://instagram.com/" title="Instagram" rel="nofallow noopener"  target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18.718" height="18.718" viewBox="0 0 18.718 18.718"><defs><style>.a{fill:#e5d5bb;}</style></defs><path class="a" d="M12.476,9.357h0a3.119,3.119,0,1,0-.914,2.206A3,3,0,0,0,12.476,9.4V9.357Zm1.684,0a4.784,4.784,0,1,1-1.4-3.4,4.618,4.618,0,0,1,1.4,3.319v.081Zm1.316-5v0a1.123,1.123,0,1,1-.329-.794,1.076,1.076,0,0,1,.324.77v.023h0ZM9.362,1.679,8.43,1.673q-.847-.006-1.286,0T5.968,1.71a9.814,9.814,0,0,0-1.312.133l.057-.008a4.877,4.877,0,0,0-.907.236L3.84,2.06A3.21,3.21,0,0,0,2.068,3.817l-.008.021a4.659,4.659,0,0,0-.221.845l0,.029a9.17,9.17,0,0,0-.124,1.239v.016q-.03.738-.037,1.176t0,1.286q.006.848.006.932t-.006.932q-.006.848,0,1.286t.037,1.176a9.814,9.814,0,0,0,.133,1.312l-.008-.057a4.877,4.877,0,0,0,.236.907l-.011-.034a3.21,3.21,0,0,0,1.758,1.772l.021.008a4.66,4.66,0,0,0,.845.221l.029,0a9.171,9.171,0,0,0,1.238.124h.016q.738.03,1.176.037t1.286,0l.926-.019.932.006q.847.006,1.286,0T12.749,17a9.814,9.814,0,0,0,1.312-.133L14,16.876a4.877,4.877,0,0,0,.907-.236l-.034.011a3.21,3.21,0,0,0,1.772-1.758l.008-.021a4.66,4.66,0,0,0,.221-.845l0-.029a9.17,9.17,0,0,0,.124-1.238v-.016q.03-.738.037-1.176t0-1.286q-.006-.848-.006-.932t.006-.932q.006-.848,0-1.286t-.037-1.176a9.813,9.813,0,0,0-.133-1.312l.008.057a4.877,4.877,0,0,0-.236-.907l.011.034A3.21,3.21,0,0,0,14.9,2.056l-.021-.008a4.659,4.659,0,0,0-.845-.221l-.029,0A9.17,9.17,0,0,0,12.767,1.7H12.75q-.738-.03-1.176-.037t-1.286,0Zm9.352,7.678q0,2.79-.062,3.862A5.178,5.178,0,0,1,13.2,18.653h.012q-1.072.062-3.862.062t-3.862-.062A5.178,5.178,0,0,1,.059,13.207v.012Q0,12.147,0,9.357T.058,5.495A5.178,5.178,0,0,1,5.505.061H5.493Q6.565,0,9.355,0T13.217.06a5.178,5.178,0,0,1,5.434,5.447V5.495Q18.714,6.566,18.714,9.357Z" transform="translate(0.004 0.002)"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
+   <a class="goToTop" href="#">&uarr;</a>
+
+    <!-- photoswipe JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+    <!--Swiper JS -->
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/scripts.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIXFTZ5TWh5sJutqQeoiXH3aNRScmIxBw&callback=initMap"></script>
   </body>
 </html>
