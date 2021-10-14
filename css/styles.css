@@ -225,7 +225,7 @@ a {
 .title-sec:before, .title-sec:after {
   content: "";
   position: absolute;
-  background-image: url(/../img/ornament-title.svg);
+  background-image: url(../img/ornament-title.svg);
   width: 30px;
   height: 43px;
   top: 50%;
@@ -242,7 +242,7 @@ a {
 }
 
 .title-sec.c-white:before, .title-sec.c-white:after {
-  background-image: url(/../img/ornament-title-white.svg);
+  background-image: url(../img/ornament-title-white.svg);
 }
 
 /*!
