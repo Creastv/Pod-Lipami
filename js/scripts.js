@@ -352,11 +352,17 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 initPhotoSwipeFromDOM(".my-gallery");
 
 // map
+var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+if (viewportWidth > 768) {
+  var loc = { lat: 50.2231978, lng: 19.0568391 };
+} else {
+  var loc = { lat: 50.222168, lng: 19.0670185 };
+}
 function initMap() {
   var uluru = { lat: 50.222168, lng: 19.0670185 };
   var map = new google.maps.Map(document.getElementById("mapa-it"), {
     zoom: 15,
-    center: { lat: 50.2231978, lng: 19.0568391 },
+    center: loc,
 
     styles: [
       {
