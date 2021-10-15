@@ -1,103 +1,106 @@
-#footer{
-    width: 100%;
-    padding: 70px 0 0 0;
-    background-color: $red;
-    .row{
-        display: flex;
-        align-items: center;
-         @media #{$sm} {
-            justify-content: center;
-            text-align: center;
-        }
-        @media #{$xs} {
-            justify-content: center;
-            text-align: center;
-        }
-         .col1, .col2, .col3{
-             padding: 20px 50px;
-             @media #{$xs} {
-                 padding: 10px 50px;
-             }
-             p{
-                 margin-bottom: 10px;
-             }
-             *{
-                 color:#fff;
-                 font-size: 16px;
-             }
-         }
-        .col1{
-            padding: 20px 50px;
-        }
-        .col3{
-            ul{
-                list-style: none;
-                padding: 0;
-                @media #{$sm} {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
-                li{
-                    @media #{$xs} {
-                        width: 100%;
-                    }
-                    a{
-                        transition: all 0.3;
-                        margin-bottom: 10px;
-                        display: flex;
-                        align-items: center;
-                         @media #{$sm} {
-                             margin-right: 10px;
-                         }
-                        @media #{$xs} {
-                            justify-content: center;
-                        }
-                        svg{ margin-right: 10px;}
-                        &:hover{
-                            color:#E5D5BB;
-                        }
-                    }
-                    
-                }
-            }
-        }
+#footer {
+  width: 100%;
+  padding: 70px 0 0 0;
+  background-color: $red;
+  .row {
+    display: flex;
+    align-items: center;
+    @media #{$sm} {
+      justify-content: center;
+      text-align: center;
     }
-    .inf{
-        color:#E5D5BB;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
+    @media #{$xs} {
+      justify-content: center;
+      text-align: center;
+    }
+    .col1,
+    .col2,
+    .col3 {
+      padding: 20px 50px;
+      @media #{$xs} {
+        padding: 10px 50px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      * {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+    .col1 {
+      padding: 20px 50px;
+    }
+    .col3 {
+      ul {
+        list-style: none;
+        padding: 0;
+        @media #{$sm} {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        li {
           @media #{$xs} {
-              justify-content: center;
+            width: 100%;
           }
-        .col{
-                width: initial;
-        }
-        p{
-            @media #{$xs} {
-                margin-bottom: 10px;
-            }
-        }
-        p, a {
-            font-size: 14px;
-            color:#E5D5BB;
-        }
-        hr{
-            background-color: #E5D5BB;
-        }
-        .socialmedia{
-            list-style: none;
-            padding: 0;
+          a {
+            transition: all 0.3;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
-            li{
-                a{
-                    padding: 10px;
-                }
+            @media #{$sm} {
+              margin-right: 10px;
             }
-
+            @media #{$xs} {
+              justify-content: center;
+            }
+            svg {
+              margin-right: 10px;
+            }
+            &:hover {
+              color: #e5d5bb;
+            }
+          }
         }
+      }
     }
+  }
+  .inf {
+    color: #e5d5bb;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    @media #{$xs} {
+      justify-content: center;
+    }
+    .col {
+      width: initial;
+    }
+    p {
+      @media #{$xs} {
+        margin-bottom: 10px;
+      }
+    }
+    p,
+    a {
+      font-size: 14px;
+      color: #e5d5bb;
+    }
+    hr {
+      background-color: #e5d5bb;
+    }
+    .socialmedia {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      li {
+        a {
+          padding: 10px;
+        }
+      }
+    }
+  }
 }

@@ -1,14 +1,17 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #FBFAF5;
+  background-color: #fbfaf5;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -78,7 +81,7 @@ body {
 
 hr {
   height: 1px;
-  background: #E5D5BB;
+  background: #e5d5bb;
   border: none;
 }
 
@@ -152,10 +155,15 @@ hr {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "abril-display-extraBold";
   color: #7b0d15;
 }
@@ -311,7 +319,9 @@ a {
   margin-top: -2px;
 }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
   width: 40px;
   height: 4px;
   background-color: #000;
@@ -327,7 +337,8 @@ a {
           transition-timing-function: ease;
 }
 
-.hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner::before,
+.hamburger-inner::after {
   content: "";
   display: block;
 }
@@ -518,7 +529,7 @@ a {
   padding: 5px 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #211D1D;
+  color: #211d1d;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -550,7 +561,7 @@ a {
           align-items: stretch;
   text-decoration: none;
   font-size: 20px;
-  color: #211D1D;
+  color: #211d1d;
 }
 
 #header .logo a span {
@@ -561,7 +572,7 @@ a {
 }
 
 #header .logo a img {
-  border-left: 1px solid #211D1D;
+  border-left: 1px solid #211d1d;
   padding-left: 10px;
   max-width: 84px;
 }
@@ -569,7 +580,7 @@ a {
 .btn {
   padding: 10px 35px;
   border-radius: 20px;
-  border: 2px solid #CC9745;
+  border: 2px solid #cc9745;
   text-decoration: none;
   display: inline-block;
   -webkit-transition: all 250ms;
@@ -587,7 +598,7 @@ a {
 }
 
 .btn:focus {
-  opacity: .9;
+  opacity: 0.9;
   color: #fff;
   -webkit-transition: all 125ms;
   transition: all 125ms;
@@ -601,18 +612,18 @@ a {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  border-color: #CC9745;
+  border-color: #cc9745;
   text-transform: uppercase;
 }
 
 .btn-first:hover, .btn-first:focus {
   color: #fff;
-  background-color: #CC9745;
+  background-color: #cc9745;
 }
 
 .btn-second {
   font-size: 18px;
-  color: #211D1D;
+  color: #211d1d;
   border-color: #7b0d15;
 }
 
@@ -625,26 +636,28 @@ a {
   margin-bottom: 15px;
 }
 
-input, textarea {
+input,
+textarea {
   font-size: 16px;
   max-height: 55px;
   width: 100%;
   padding: 15px 5px;
   border: none;
-  border-bottom: 2px solid #211D1D;
+  border-bottom: 2px solid #211d1d;
   border-radius: 0;
   background: none;
   outline: 0;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-bottom: 2px solid green;
 }
 
 button {
   background: none;
-  color: #211D1D;
-  border: 2px solid #211D1D;
+  color: #211d1d;
+  border: 2px solid #211d1d;
   font-size: 16px;
   border-radius: 100px;
   min-width: 160px;
@@ -656,7 +669,7 @@ button {
 }
 
 button:hover {
-  background: #211D1D;
+  background: #211d1d;
   color: #fff;
   -webkit-transition: all 125ms;
   transition: all 125ms;
@@ -667,8 +680,8 @@ button:hover {
 }
 
 button:focus {
-  background: #211D1D;
-  opacity: .9;
+  background: #211d1d;
+  opacity: 0.9;
   color: #fff;
   -webkit-transition: all 125ms;
   transition: all 125ms;
@@ -679,22 +692,22 @@ button:focus {
 }
 
 ::-webkit-input-placeholder {
-  color: #211D1D;
+  color: #211d1d;
   font-size: 16px;
 }
 
 :-ms-input-placeholder {
-  color: #211D1D;
+  color: #211d1d;
   font-size: 16px;
 }
 
 ::-ms-input-placeholder {
-  color: #211D1D;
+  color: #211d1d;
   font-size: 16px;
 }
 
 ::placeholder {
-  color: #211D1D;
+  color: #211d1d;
   font-size: 16px;
 }
 
@@ -731,21 +744,29 @@ button:focus {
   }
 }
 
-#footer .row .col1, #footer .row .col2, #footer .row .col3 {
+#footer .row .col1,
+#footer .row .col2,
+#footer .row .col3 {
   padding: 20px 50px;
 }
 
 @media only screen and (max-width: 768px) {
-  #footer .row .col1, #footer .row .col2, #footer .row .col3 {
+  #footer .row .col1,
+  #footer .row .col2,
+  #footer .row .col3 {
     padding: 10px 50px;
   }
 }
 
-#footer .row .col1 p, #footer .row .col2 p, #footer .row .col3 p {
+#footer .row .col1 p,
+#footer .row .col2 p,
+#footer .row .col3 p {
   margin-bottom: 10px;
 }
 
-#footer .row .col1 *, #footer .row .col2 *, #footer .row .col3 * {
+#footer .row .col1 *,
+#footer .row .col2 *,
+#footer .row .col3 * {
   color: #fff;
   font-size: 16px;
 }
@@ -809,11 +830,11 @@ button:focus {
 }
 
 #footer .row .col3 ul li a:hover {
-  color: #E5D5BB;
+  color: #e5d5bb;
 }
 
 #footer .inf {
-  color: #E5D5BB;
+  color: #e5d5bb;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -842,13 +863,14 @@ button:focus {
   }
 }
 
-#footer .inf p, #footer .inf a {
+#footer .inf p,
+#footer .inf a {
   font-size: 14px;
-  color: #E5D5BB;
+  color: #e5d5bb;
 }
 
 #footer .inf hr {
-  background-color: #E5D5BB;
+  background-color: #e5d5bb;
 }
 
 #footer .inf .socialmedia {
@@ -990,7 +1012,7 @@ section#wesele svg {
 
 section#oferta {
   background-color: #7b0d15;
-  padding: 110px 0  0;
+  padding: 110px 0 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1020,8 +1042,8 @@ section#oferta .toggle {
 
 section#oferta .toggle p {
   margin-bottom: 0;
-  -webkit-transition: all .3;
-  transition: all .3;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
   cursor: pointer;
   border-top: 1px solid #a87679;
   border-bottom: 1px solid #a87679;
@@ -1068,8 +1090,8 @@ section#oferta .container--tabs .openTab {
 }
 
 section#oferta .container--tabs .nav-tabs {
-  -webkit-transition: height .3;
-  transition: height .3;
+  -webkit-transition: height 0.3;
+  transition: height 0.3;
   width: 25%;
   padding: 0 15px 0 0;
 }
@@ -1163,8 +1185,8 @@ section#oferta .container--tabs .nav-tabs li a:after {
   width: 0%;
   height: 100%;
   background-color: #5f0e12;
-  -webkit-transition: all .7s;
-  transition: all .7s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 section#oferta .container--tabs .tab-content {
