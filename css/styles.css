@@ -1382,7 +1382,7 @@ section#kontakt .col-2 {
 
 section#kontakt .wrap-form {
   background: #fbfaf5;
-  padding: 60px;
+  padding: 100px 60px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1421,7 +1421,7 @@ section#kontakt .cover-map {
 
 section#kontakt .cover-map #mapa-it {
   width: 100%;
-  height: 600px;
+  height: 680px;
 }
 
 @media only screen and (max-width: 768px) {
