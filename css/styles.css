@@ -1,3 +1,10 @@
+/*!
+ * OnePage - Pod Lipami
+ * @description Projekt wykonany na potrzeby rekrutacji
+ * @author Piotr Stefaniak
+ * @site https://creastv.pl/
+ * @link to project https://creastv.github.io/Pod-Lipami/
+ */
 html,
 body {
   margin: 0;
@@ -253,13 +260,6 @@ a {
   background-image: url(../img/ornament-title-white.svg);
 }
 
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
