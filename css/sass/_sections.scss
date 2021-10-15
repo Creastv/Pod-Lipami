@@ -261,7 +261,7 @@ section#menu {
   &:before {
     content: "";
     position: absolute;
-    top: -110px;
+    top: 0px;
     background-color: $red;
     width: 100%;
     height: calc(50% + 110px);
@@ -274,7 +274,7 @@ section#menu {
     height: 350px;
     position: relative;
     // margin-top: 110px;
-    background: url(../img/bg-menu.png);
+    background: url(../img/bg-menu.webp);
     .wraper {
       background-color: rgba(0, 0, 0, 0.5);
       height: 350px;

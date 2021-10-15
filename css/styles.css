@@ -1228,7 +1228,7 @@ section#menu {
 section#menu:before {
   content: "";
   position: absolute;
-  top: -110px;
+  top: 0px;
   background-color: #7b0d15;
   width: 100%;
   height: calc(50% + 110px);
@@ -1244,7 +1244,7 @@ section#menu:before {
 section#menu .banner {
   height: 350px;
   position: relative;
-  background: url(../img/bg-menu.png);
+  background: url(../img/bg-menu.webp);
 }
 
 section#menu .banner .wraper {
